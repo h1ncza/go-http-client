@@ -35,7 +35,6 @@ func main() {
 	}
 	defer resp.Body.Close()
 
-	fmt.Println("Response status:", resp.Status)
 	respByte, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log.Fatal(err)
