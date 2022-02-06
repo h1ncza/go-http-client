@@ -16,7 +16,7 @@ var (
 func main() {
 
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: gochost <host>")
+		fmt.Println("Usage: gocurl <host>")
 		os.Exit(1)
 	} else {
 		host = os.Args[1]
